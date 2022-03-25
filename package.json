@@ -3,6 +3,11 @@
   "version": "0.1.2",
   "private": false,
   "repository": "https://github.com/dilysbi/Reactjs-BASE-FE",
+  "keywords": [
+    "reactjs base repository",
+    "reactjs with eslint",
+    "reactjs with prettier"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
