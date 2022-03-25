@@ -1,0 +1,41 @@
+@import 'assets/css/variables.scss';
+
+.back-link {
+  color: #ffffff;
+  fill: #ffffff;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    width: 20px;
+    @include media-up(sm) {
+      width: 30px;
+    }
+  }
+
+  .back-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: capitalize;
+    margin-left: 10px;
+    @include media-up(sm) {
+      font-size: 32px;
+      line-height: 44px;
+      margin-left: 20px;
+    }
+  }
+
+  &:hover {
+    color: darken($color: #ffffff, $amount: 20);
+    fill: darken($color: #ffffff, $amount: 20);
+  }
+  &:active {
+    color: #ffffff;
+    fill: #ffffff;
+  }
+}

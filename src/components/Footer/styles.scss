@@ -1,0 +1,145 @@
+@import 'assets/css/variables.scss';
+
+.footer-container {
+  overflow: hidden;
+
+  .footer-content {
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 14px 0px;
+    margin: 0 auto;
+  }
+
+  .footer-des {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    margin-right: 20px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      max-width: 40px;
+      object-fit: contain;
+      margin-right: 10px;
+    }
+    span {
+      color: #ffffff;
+
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 160%;
+      white-space: nowrap;
+    }
+  }
+
+  .socials-list {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin: 0 -16px;
+    margin-top: 40px;
+
+    a {
+      display: block;
+      margin: 0 16px;
+    }
+    img {
+      width: auto;
+      height: 28px;
+      object-fit: contain;
+    }
+  }
+
+  .footer-title {
+    color: #ffffff;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  .footer-sub-title {
+    color: #a5adcf;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:hover {
+      color: lighten($color: #fff, $amount: 10);
+    }
+  }
+
+  .quick-links {
+    ul {
+      list-style: none;
+      li {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .footer-actions {
+    .footer-actions-des {
+      color: #a5adcf;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 26px;
+      margin-bottom: 26px;
+    }
+  }
+
+  .footer-bottom {
+    padding: 30px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 20px;
+
+    border-top: 1px solid #34384c;
+
+    @include media-up(sm) {
+      flex-direction: row;
+    }
+
+    p {
+      color: #5d6588;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-bottom-right {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row nowrap;
+      .hr-hor {
+        display: block;
+        width: 1px;
+        height: 20px;
+        margin: 0 10px;
+        background: #5d6588;
+      }
+      a {
+        color: #5d6588;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

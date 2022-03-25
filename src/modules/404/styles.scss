@@ -1,0 +1,171 @@
+.warp-page-404 {
+  background-color: #141518;
+  padding: 60px 24px 0;
+
+  .content {
+    overflow: hidden;
+    position: relative;
+    background-color: #1e1f25;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      max-width: 868px;
+      padding: 0 16px;
+      margin: auto;
+
+      .box-content-text {
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 3.1;
+        padding: 50px 0;
+
+        h1 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 130%;
+          text-transform: capitalize;
+          color: #ffffff;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          color: #5d6588;
+          margin-bottom: 0;
+        }
+
+        .go-back {
+          font-family: 'Graphik';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 130%;
+          text-transform: capitalize;
+          color: #ffffff;
+          padding-left: 10px;
+          display: inline-block;
+        }
+      }
+
+      .box-image-text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px 0;
+        flex: 1;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .background {
+      width: 100%;
+      min-height: 400px;
+      pointer-events: none;
+    }
+  }
+
+  .stripes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(15%, -50%);
+    width: 130%;
+    pointer-events: none;
+    animation: animationStripes 25s infinite;
+  }
+
+  @media (min-width: 430px) {
+    .content {
+      .background {
+        width: 100%;
+      }
+
+      > div {
+        .box-content-text {
+          h1 {
+            font-size: 38px;
+          }
+
+          p {
+            font-size: 22px;
+            line-height: 38px;
+          }
+        }
+
+        .box-image-text {
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 991px) {
+    .content {
+      min-height: 640px;
+      height: 70vh;
+
+      .background {
+        width: 100%;
+      }
+
+      > div {
+        height: 100%;
+
+        .box-content-text {
+          justify-content: center;
+
+          h1 {
+            font-size: 82px;
+            line-height: 96px;
+          }
+
+          p {
+            font-size: 26px;
+            line-height: 38px;
+          }
+
+          .go-back {
+            position: absolute;
+            bottom: 10%;
+          }
+        }
+
+        .box-image-text {
+          img {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 991px) {
+    padding: 60px 80px 0;
+  }
+}
+
+@keyframes animationStripes {
+  0% {
+    transform: translate(15%, -50%) scale(1, 1);
+  }
+  50% {
+    transform: translate(15%, -40%) scale(1.3, 0.9);
+  }
+  100% {
+    transform: translate(15%, -50%) scale(1, 1);
+  }
+}

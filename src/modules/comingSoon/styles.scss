@@ -1,0 +1,100 @@
+.warp-page-coming-soon {
+  background-color: #141518;
+  padding: 60px 24px 0;
+
+  .content {
+    overflow: hidden;
+    position: relative;
+    background-color: #1e1f25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 15px;
+
+    > div {
+      max-width: 1000px;
+      margin: auto;
+      max-width: 100%;
+
+      > div {
+        &:first-child {
+          margin-bottom: 65px;
+        }
+
+        &:nth-child(2) {
+          max-width: 100%;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    p {
+      &:first-child {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      &:last-child {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #b8b8b8;
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .stripes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(15%, -50%);
+    width: 130%;
+    pointer-events: none;
+    animation: animationStripes 25s infinite;
+  }
+
+  @media (min-width: 991px) {
+    .content {
+      min-height: 640px;
+      height: 70vh;
+    }
+  }
+
+  @media (min-width: 991px) {
+    padding: 60px 80px 0;
+
+    .content {
+      p {
+        &:first-child {
+          font-size: 14px;
+        }
+
+        &:last-child {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animationStripes {
+  0% {
+    transform: translate(15%, -50%) scale(1, 1);
+  }
+  50% {
+    transform: translate(15%, -50%) scale(1.3, 0.9);
+  }
+  100% {
+    transform: translate(15%, -50%) scale(1, 1);
+  }
+}

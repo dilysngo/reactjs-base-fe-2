@@ -1,0 +1,59 @@
+@import 'assets/css/variables.scss';
+
+.form-login {
+  max-width: 580px;
+
+  h2 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+    @include media-up(sm) {
+      font-size: 32px;
+    }
+  }
+
+  .form-action {
+    width: 100%;
+    max-width: 187px;
+    margin: 16px auto;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    @include media-up(sm) {
+      max-width: 287px;
+      margin: 24px auto;
+    }
+  }
+
+  .form-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: #14d19d;
+
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      @include media-up(sm) {
+        font-size: 16px;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+}

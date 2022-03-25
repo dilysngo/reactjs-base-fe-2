@@ -1,0 +1,67 @@
+@import 'assets/css/variables.scss';
+
+.verify-code {
+  max-width: 580px;
+  .verify-title {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+    @include media-up(sm) {
+      font-size: 32px;
+    }
+  }
+  .verify-resend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    > div,
+    > a {
+      color: #14d19d;
+
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 24px;
+      @include media-up(sm) {
+        font-size: 16px;
+      }
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    a:active {
+      opacity: 1;
+    }
+  }
+  .verify-error {
+    color: $warning;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 10px;
+    @include media-up(sm) {
+      font-size: 16px;
+    }
+  }
+  .verify-action {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    row-gap: 20px;
+
+    button {
+      max-width: 288px;
+    }
+  }
+}

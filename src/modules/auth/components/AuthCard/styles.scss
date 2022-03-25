@@ -1,0 +1,13 @@
+@import 'assets/css/variables.scss';
+
+.auth-card {
+  width: 100%;
+  padding: 30px 14px;
+  background: $background-card;
+  border-radius: 12px;
+  z-index: 2;
+
+  @include media-up(sm) {
+    padding: 60px 40px;
+  }
+}
