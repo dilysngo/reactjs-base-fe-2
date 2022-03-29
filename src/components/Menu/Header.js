@@ -21,7 +21,7 @@ const Header = ({ links, showMenu, toggleMenu }) => {
           <div className="header-left">
             <Link to="/">
               <div className="header-logo">
-                <img src="/images/logo.png" title="MMRocket" alt="MMRocket" />
+                <img src="/images/logo.png" title="HC Software" alt="HC Software" />
                 <span>Reactjs</span>
               </div>
             </Link>

@@ -38,7 +38,7 @@ const AuthenCode = ({ children, className, ...props }) => {
       </div>
       <div className="authen-exclamation">
         <ExclamationIcon />
-        <p>The MM Rocket/Google Authenticator app protects your withdrawals and MM Rocket account</p>
+        <p>The HC Software/Google Authenticator app protects your withdrawals and HC Software account</p>
       </div>
     </AuthCard>
   );

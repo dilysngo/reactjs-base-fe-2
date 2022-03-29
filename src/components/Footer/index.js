@@ -42,7 +42,7 @@ const Footer = () => (
         <Col xs={24} sm={24} lg={24} xl={8}>
           <Link to="/">
             <div className="footer-logo">
-              <img src="/images/logo.png" title="MMRocket" alt="MMRocket" />
+              <img src="/images/logo.png" title="HC Software" alt="HC Software" />
               <span>Reactjs</span>
             </div>
           </Link>
@@ -111,7 +111,7 @@ const Footer = () => (
         </Col>
       </Row>
       <div className="footer-bottom">
-        <p>MM Rocket ©. All rights reserved.</p>
+        <p>HC Software ©. All rights reserved.</p>
         <div className="footer-bottom-right">
           <a href="/coming-soon" target="_blank" rel="noreferrer">
             Term of Service

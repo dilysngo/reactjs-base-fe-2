@@ -1,5 +1,4 @@
-.warp-page-coming-soon {
-  background-color: #141518;
+.coming-soon-container {
   padding: 60px 24px 0;
 
   .content {
@@ -24,11 +23,11 @@
         &:nth-child(2) {
           max-width: 100%;
         }
-
-        img {
-          max-width: 100%;
-        }
       }
+    }
+
+    .soon {
+      font-size: 20px;
     }
 
     p {
@@ -67,6 +66,9 @@
     .content {
       min-height: 640px;
       height: 70vh;
+      .soon {
+        font-size: 50px;
+      }
     }
   }
 
