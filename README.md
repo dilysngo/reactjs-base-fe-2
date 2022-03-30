@@ -1,8 +1,20 @@
 # Reactjs BASE SRC
 
-[![Version](https://img.shields.io/npm/v/reactjs-base-src)](https://github.com/dilysbi/Reactjs-BASE-FE) [![Size](https://img.shields.io/bundlephobia/min/reactjs-base-src)](https://github.com/dilysbi/Reactjs-BASE-FE)
+[![Version](https://img.shields.io/npm/v/reactjs-base-src)](https://github.com/dilysbi/Reactjs-BASE-FE)
+![size](https://img.shields.io/github/languages/code-size/dilysbi/Reactjs-BASE-FE)
+![Forks](https://img.shields.io/github/forks/dilysbi/Reactjs-BASE-FE?style=social)
+![Stars](https://img.shields.io/github/stars/dilysbi/Reactjs-BASE-FE?style=social)
+![Languages](https://img.shields.io/github/languages/count/dilysbi/Reactjs-BASE-FE)
+![Issues](https://img.shields.io/github/issues/dilysbi/Reactjs-BASE-FE)
+![PRs](https://img.shields.io/github/issues-pr-raw/dilysbi/Reactjs-BASE-FE)
+![contributors](https://img.shields.io/github/contributors-anon/dilysbi/Reactjs-BASE-FE)
 
-Reactjs BASE SRC is repo for fasting build production that includes, babel, eslint, prettier, v.v...
+<div align="Center">
+<h1>REACTJS BASE</h1>
+<h3> Reactjs BASE SRC is repo for fasting build production that includes, babel, eslint, prettier, v.v... </h3>
+</div>
+
+<br>
 
 ## Clone
 
@@ -23,9 +35,9 @@ npm start
 ## Setup
 
 ```
-.env.div for development
-.env.uat for testing staging
-.env.prod for build production
+.env.development for development
+.env.staging for testing staging
+.env.production for build production
 ```
 
 ### Types
